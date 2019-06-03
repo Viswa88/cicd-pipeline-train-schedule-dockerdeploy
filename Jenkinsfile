@@ -13,7 +13,7 @@ pipeline {
                  branch 'master'
             }
             steps {
-                app = docker.build("viswa.c88/train-schedule")
+                app = docker.build("viswa88/train-schedule")
                 app.inside {
                      sh 'echo $(curl localhost:8080)'
                 }
